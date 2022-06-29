@@ -2,4 +2,8 @@
 	name = jtrdt
 	email = 
 [core]
-	excludesfile = 
+	excludesfile = ~/.gitignore_global
+[rebase]
+	autosquash = true
+[pull]
+	rebase = true
