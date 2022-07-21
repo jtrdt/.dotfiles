@@ -13,9 +13,9 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-
 export LANG=en_US.UTF-8
 
+# Shortcuts
 alias reload='omz reload'
-
 alias dev="cd ~/Developer/"
+alias copyssh="pbcopy < $HOME/.ssh/id_ed25519.pub"
