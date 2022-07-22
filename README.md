@@ -11,7 +11,7 @@ After backing up your old Mac you may now follow these install instructions to s
    curl https://raw.githubusercontent.com/driesvints/dotfiles/HEAD/ssh.sh | sh -s "<your-email-address>"
    ```
 
-3. Clone this repo
+3. Clone this repo (install xcode-select in the process)
 
 4. Run the installation with:
     ```zsh
