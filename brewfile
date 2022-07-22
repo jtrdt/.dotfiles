@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo "Executing Brewfile..."
+
 # Check for Homebrew and install if we don't have it
 if test ! $(which brew); then
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -7,6 +9,9 @@ if test ! $(which brew); then
   echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> $HOME/.zprofile
   eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
+
+# Install Rosetta
+sudo softwareupdate --install-rosetta
 
 brew install --cask alfred
 brew install --cask bitwarden
@@ -21,6 +26,7 @@ brew install --cask protonvpn
 brew install --cask robo-3t
 brew install --cask slack
 brew install --cask spotify
+brew install --cask thunderbird
 brew install --cask visual-studio-code
 brew install --cask vlc
 
@@ -34,3 +40,5 @@ brew install yarn
 brew tap mongodb/brew
 brew install mongodb-community@4.0
 # brew services start mongodb/brew/mongodb-community@4.0
+
+brew cleanup

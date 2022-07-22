@@ -8,8 +8,10 @@ plugins=(
 	docker
 	docker-compose
 	yarn
-	zsh-autosuggestions
+	zsh-autocomplete
 )
+zstyle ':autocomplete:*' min-input 1  # int
+
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
