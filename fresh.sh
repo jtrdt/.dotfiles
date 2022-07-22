@@ -7,9 +7,11 @@ if test ! $(which omz); then
   /bin/sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/HEAD/tools/install.sh)"
 fi
 
-echo "Copying zshrc file..."
+echo "Copying config files..."
 rm -rf $HOME/.zshrc
 cp .zshrc $HOME
+cp .gitignore_global $HOME
+cp .gitconfig $HOME
 
 echo "Adding zsh plugins..."
 git clone https://github.com/marlonrichert/zsh-autocomplete.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autocomplete
