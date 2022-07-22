@@ -5,5 +5,5 @@
 	excludesfile = ~/.gitignore_global
 [rebase]
 	autosquash = true
-[pull]
-	rebase = true
+[push]
+	autosetupremote = true
