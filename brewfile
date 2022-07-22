@@ -27,11 +27,10 @@ brew install --cask vlc
 brew install node@16  # current LTS version
 brew link --overwrite node@16
 
-brew install curl
 brew install tree
 brew install yarn
 
 # Mongo
 brew tap mongodb/brew
 brew install mongodb-community@4.0
-brew services start mongodb/brew/mongodb-community@4.0
+# brew services start mongodb/brew/mongodb-community@4.0
