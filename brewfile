@@ -31,6 +31,7 @@ brew install --cask spotify
 brew install --cask thunderbird
 brew install --cask visual-studio-code
 brew install --cask vlc
+brew install --cask webstorm
 
 brew install node@16  # current LTS version
 brew link --overwrite node@16
