@@ -18,10 +18,10 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 ###############################################################################
 
 # Set computer name (as done via System Preferences → Sharing)
-sudo scutil --set ComputerName "mbp-jt"
-sudo scutil --set HostName "mbp-jt"
-sudo scutil --set LocalHostName "mbp-jt"
-sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "mbp-jt"
+sudo scutil --set ComputerName "fasst25"
+sudo scutil --set HostName "fasst25"
+sudo scutil --set LocalHostName "fasst25"
+sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "fasst25"
 
 # Disable the sound effects on boot
 sudo nvram StartupMute=1
@@ -68,7 +68,7 @@ defaults write NSGlobalDomain AppleShowScrollBars -string "Automatic"
 # defaults write NSGlobalDomain NSTextShowsControlCharacters -bool true
 
 # Disable Resume system-wide
-# defaults write com.apple.systempreferences NSQuitAlwaysKeepsWindows -bool false
+defaults write com.apple.systempreferences NSQuitAlwaysKeepsWindows -bool false
 
 # # Disable automatic termination of inactive apps
 # # defaults write NSGlobalDomain NSDisableAutomaticTermination -bool true
@@ -126,7 +126,7 @@ defaults write NSGlobalDomain InitialKeyRepeat -int 10
 sudo defaults write /Library/Preferences/com.apple.loginwindow showInputMenu -bool true
 
 # Set the timezone; see `sudo systemsetup -listtimezones` for other values
-sudo systemsetup -settimezone "Europe/Brussels" > /dev/null
+sudo systemsetup -settimezone "Europe/Paris" > /dev/null
 
 ###############################################################################
 # Screen                                                                      #
@@ -140,7 +140,7 @@ defaults write com.apple.screensaver askForPassword -int 1
 defaults write com.apple.screensaver askForPasswordDelay -int 0
 
 # Save screenshots to the desktop
-defaults write com.apple.screencapture location -string "${HOME}/Desktop"
+defaults write com.apple.screencapture location -string "${HOME}/Desktop/Screenshots"
 
 # Save screenshots in PNG format (other options: BMP, GIF, JPG, PDF, TIFF)
 defaults write com.apple.screencapture type -string "png"
@@ -165,8 +165,8 @@ defaults write NSGlobalDomain AppleFontSmoothing -int 1
 # Finder: disable window animations and Get Info animations
 defaults write com.apple.finder DisableAllAnimations -bool true
 
-# Set Desktop as the default location for new Finder windows
-# For other paths, use `PfLo` and `file:///full/path/here/`
+# Set Home as the default location for new Finder windows
+# For other paths than desktop, use `PfLo` and `file:///full/path/here/`
 defaults write com.apple.finder NewWindowTarget -string "PfLo"
 defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/"
 
@@ -268,7 +268,7 @@ defaults write com.apple.dock mouse-over-hilite-stack -bool true
 defaults write com.apple.dock tilesize -int 36
 
 # Set dock to the left
-defaults write com.apple.dock orientation -string right
+defaults write com.apple.dock orientation -string left
 
 # Change minimize/maximize window effect
 defaults write com.apple.dock mineffect -string "scale"
@@ -294,7 +294,7 @@ defaults write com.apple.dock static-only -bool true
 defaults write com.apple.dock launchanim -bool false
 
 # Speed up Mission Control animations
-# defaults write com.apple.dock expose-animation-duration -float 0.1
+defaults write com.apple.dock expose-animation-duration -float 0.1
 
 # Disable Dashboard
 defaults write com.apple.dashboard mcx-disabled -bool true
@@ -307,6 +307,7 @@ defaults write com.apple.dock mru-spaces -bool false
 
 # Remove the auto-hiding Dock delay
 defaults write com.apple.dock autohide-delay -float 0
+
 # Remove the animation when hiding/showing the Dock
 defaults write com.apple.dock autohide-time-modifier -float 0
 
