@@ -24,7 +24,6 @@ brew install --cask microsoft-teams
 brew install --cask robo-3t
 brew install --cask slack
 brew install --cask spotify
-brew install --cask microsoft-teams
 brew install --cask thunderbird
 brew install --cask visual-studio-code
 brew install --cask vlc
