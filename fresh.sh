@@ -3,7 +3,7 @@
 echo "Setting up new Mac..."
 
 echo "Installing oh-my-zsh..."
-if test ! $(which omz); then
+if test ! "$(which omz)"; then
   /bin/sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/HEAD/tools/install.sh)"
 fi
 
