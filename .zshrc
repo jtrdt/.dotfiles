@@ -16,6 +16,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 export LANG=en_US.UTF-8
+export EDITOR='nvim'
 
 # Shortcuts
 alias reload='omz reload'
