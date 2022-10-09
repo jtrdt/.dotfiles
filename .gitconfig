@@ -1,9 +1,15 @@
 [user]
 	name = jtrdt
-	email = 
+	email =
 [core]
 	excludesfile = ~/.gitignore_global
+	autocrlf = input
 [rebase]
 	autosquash = true
 [push]
-	autosetupremote = true
+	default = simple
+    autoSetupRemote = true
+[pull]
+	rebase = false
+[merge]
+	tool = nvimdiff
