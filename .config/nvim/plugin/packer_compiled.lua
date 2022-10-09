@@ -89,6 +89,11 @@ _G.packer_plugins = {
     path = "/Users/jtridat/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
+  ["cmp-path"] = {
+    loaded = true,
+    path = "/Users/jtridat/.local/share/nvim/site/pack/packer/start/cmp-path",
+    url = "https://github.com/hrsh7th/cmp-path"
+  },
   ["cmp-tabnine"] = {
     loaded = true,
     path = "/Users/jtridat/.local/share/nvim/site/pack/packer/start/cmp-tabnine",

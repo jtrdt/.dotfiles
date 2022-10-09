@@ -1,1 +1,1 @@
-require('jtridat')
+require('jtrdt')
