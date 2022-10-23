@@ -17,6 +17,7 @@ brew install --cask alfred
 brew install --cask bitwarden
 brew install --cask docker
 brew install --cask firefox
+brew install --cask goland
 brew install --cask google-chrome
 brew install --cask insomnia
 brew install --cask iterm2
@@ -36,7 +37,6 @@ brew install node@16  # current LTS version
 brew link --overwrite node@16
 
 brew install neovim
-brew install tree
 brew install yarn
 
 # Mongo
