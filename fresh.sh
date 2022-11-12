@@ -13,6 +13,7 @@ cp .zshrc $HOME
 cp .gitignore_global $HOME
 cp .gitconfig $HOME
 cp .yabairc $HOME
+cp .skhdrc $HOME
 
 echo "Adding zsh plugins..."
 git clone https://github.com/marlonrichert/zsh-autocomplete.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autocomplete

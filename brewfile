@@ -36,6 +36,10 @@ brew install --cask webstorm
 brew install node@16  # current LTS version
 brew link --overwrite node@16
 
+brew install koekeishiya/formulae/skhd
+brew services start skhd
+brew install koekeishiya/formulae/yabai
+brew services start yabai
 brew install neovim
 brew install yarn
 
