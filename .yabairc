@@ -8,6 +8,7 @@ yabai -m config window_topmost               on
 yabai -m config window_shadow                float
 yabai -m config window_opacity               on
 yabai -m config window_border                on
+yabai -m config window_border_blur           off
 yabai -m config window_border_width          4
 yabai -m config window_border_radius         0
 yabai -m config active_window_border_color   0xff3e5ea3
@@ -27,6 +28,7 @@ yabai -m config bottom_padding               0
 yabai -m config left_padding                 0
 yabai -m config right_padding                0
 yabai -m config window_gap                   2
+yabai -m config external_bar                 all:38:0
 
 yabai -m space 1 --label term
 yabai -m space 2 --label code
@@ -42,5 +44,8 @@ yabai -m space 0 --label space0
 yabai -m signal --add event=space_changed action="osascript -e 'tell application \"Übersicht\" to refresh widget id \"left-bar-coffee\"'"
 yabai -m rule --add app="^System Settings" layer=above manage=off border=off
 yabai -m rule --add app="^Finder" layer=above manage=off border=off
+yabai -m rule --add app="^Microsoft Teams" layer=normal manage=off border=off
+yabai -m rule --add app="^Preview" layer=above manage=off border=off
+yabai -m rule --add app="^Docker" layer=above manage=off border=off
 
 echo "yabai configuration loaded"
