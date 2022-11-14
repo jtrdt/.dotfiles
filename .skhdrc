@@ -1,32 +1,31 @@
 # fast focus desktop
-cmd + alt - x : yabai -m space --focus recent
 ctrl - w : yabai -m space --focus prev || yabai -m space --focus last
 ctrl - x : yabai -m space --focus next || yabai -m space --focus first
-fn - a : yabai -m space --focus 1
-fn - z : yabai -m space --focus 2
-fn - e : yabai -m space --focus 3
-fn - r : yabai -m space --focus 4
-fn - t : yabai -m space --focus 5
-fn - y : yabai -m space --focus 6
-fn - u : yabai -m space --focus 7
-fn - i : yabai -m space --focus 8
-fn - o : yabai -m space --focus 9
-fn - p : yabai -m space --focus 10
+ctrl - a : yabai -m space --focus 1
+ctrl - z : yabai -m space --focus 2
+ctrl - e : yabai -m space --focus 3
+ctrl - r : yabai -m space --focus 4
+ctrl - t : yabai -m space --focus 5
+ctrl - y : yabai -m space --focus 6
+ctrl - u : yabai -m space --focus 7
+ctrl - i : yabai -m space --focus 8
+ctrl - o : yabai -m space --focus 9
+ctrl - p : yabai -m space --focus 10
 
 # focus window
-fn - h : yabai -m window --focus west
-fn - j : yabai -m window --focus south
-fn - k : yabai -m window --focus north
-fn - l : yabai -m window --focus east
+ctrl - h : yabai -m window --focus west
+ctrl - j : yabai -m window --focus south
+ctrl - k : yabai -m window --focus north
+ctrl - l : yabai -m window --focus east
 
 # swap window
-fn + alt - h : yabai -m window --swap west
-fn + alt - j : yabai -m window --swap south
-fn + alt - k : yabai -m window --swap north
-fn + alt - l : yabai -m window --swap east
+ctrl + alt - h : yabai -m window --swap west
+ctrl + alt - j : yabai -m window --swap south
+ctrl + alt - k : yabai -m window --swap north
+ctrl + alt - l : yabai -m window --swap east
 
 # increase window size
-fn + alt - q : yabai -m window --resize left:-20:0
-fn + alt - d : yabai -m window --resize bottom:0:20
-fn + alt - s : yabai -m window --resize top:0:-20
-fn + alt - f : yabai -m window --resize right:20:0
+ctrl + alt - q : yabai -m window --resize left:-20:0
+ctrl + alt - d : yabai -m window --resize bottom:0:20
+ctrl + alt - s : yabai -m window --resize top:0:-20
+ctrl + alt - f : yabai -m window --resize right:20:0
