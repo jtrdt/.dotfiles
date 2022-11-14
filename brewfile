@@ -29,12 +29,13 @@ brew install --cask signal
 brew install --cask slack
 brew install --cask spotify
 brew install --cask thunderbird
+brew install --cask ubersicht
 brew install --cask visual-studio-code
 brew install --cask vlc
 brew install --cask webstorm
 
-brew install node@16  # current LTS version
-brew link --overwrite node@16
+brew install node@18  # current LTS version
+brew link --overwrite node@18
 
 brew install koekeishiya/formulae/skhd
 brew services start skhd
