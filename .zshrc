@@ -19,6 +19,6 @@ export LANG=en_US.UTF-8
 export EDITOR="nvim"
 
 # Shortcuts
-alias reload="omz reload"
+alias rl="omz reload"
 alias dev="cd ~/Developer/"
-alias copyssh="pbcopy < $HOME/.ssh/id_ed25519.pub"
+alias copyssh="pbcopy < $HOME/.ssh/id_rsa.pub"
