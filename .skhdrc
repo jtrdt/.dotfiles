@@ -12,11 +12,11 @@ ctrl - i : yabai -m space --focus 8
 ctrl - o : yabai -m space --focus 9
 ctrl - p : yabai -m space --focus 10
 
-# focus window
-ctrl - h : yabai -m window --focus west
-ctrl - j : yabai -m window --focus south
-ctrl - k : yabai -m window --focus north
-ctrl - l : yabai -m window --focus east
+# move window
+ctrl - h : yabai -m window --warp west
+ctrl - j : yabai -m window --warp south
+ctrl - k : yabai -m window --warp north
+ctrl - l : yabai -m window --warp east
 
 # swap window
 ctrl + alt - h : yabai -m window --swap west
