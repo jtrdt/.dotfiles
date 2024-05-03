@@ -21,4 +21,11 @@ export EDITOR="nvim"
 # Shortcuts
 alias rl="omz reload"
 alias dev="cd ~/Developer/"
-alias copyssh="pbcopy < $HOME/.ssh/id_rsa.pub"
+alias copyssh="pbcopy < $HOME/.ssh/id_ed25519.pub"
+alias brewup="brew update && brew upgrade && brew cleanup"
+alias fdev="yarn front:dev"
+alias sdev="yarn server:dev"
+
+export GITHUB_USER=jtridat
+export GITHUB_PASS=
+export NPM_TOKEN=

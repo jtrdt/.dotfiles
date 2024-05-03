@@ -10,38 +10,40 @@ if test ! $(which brew); then
   eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
 
-brew install --cask aldente
+# brew install --cask aldente
 brew install --cask alfred
-brew install --cask bitwarden
-brew install --cask caffeine
+# brew install --cask bitwarden
+brew install --cask bruno
+# brew install --cask caffeine
 brew install --cask docker
 brew install --cask firefox
-brew install --cask google-chrome
-brew install --cask insomnia
+# brew install --cask google-chrome
 brew install --cask iterm2
+brew install --cask intellij-idea
 brew install --cask microsoft-teams
-brew install --cask protonvpn
-brew install --cask robo-3t
+# brew install --cask protonvpn
+brew install --cask studio-3t
 brew install --cask signal
 brew install --cask slack
 brew install --cask spotify
 brew install --cask thunderbird
 brew install --cask vlc
-brew install --cask webstorm
 
-brew install node@16  # current LTS version
-brew link --overwrite node@16
+brew tap homebrew/cask-fonts
+brew cask install font-jetbrains-mono-nerd-font
 
-brew install koekeishiya/formulae/skhd
-brew services start skhd
+brew install node@20  # current LTS version
+brew link --overwrite node@20
+
+# brew install koekeishiya/formulae/skhd
+# brew services start skhd
 brew install koekeishiya/formulae/yabai
-brew services start yabai
 brew install neovim
 brew install yarn
 
 # Mongo
 brew tap mongodb/brew
-brew install mongodb-community@4.2
-brew services start mongodb/brew/mongodb-community@4.2
+brew install mongodb-community
+brew services start mongodb/brew/mongodb-community
 
 brew cleanup

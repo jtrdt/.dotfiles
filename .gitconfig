@@ -14,3 +14,7 @@
 	rebase = false
 [merge]
 	tool = nvimdiff
+[init]
+	defaultBranch = master
+[url "ssh://git@github.com/"]
+	insteadOf = https://github.com/

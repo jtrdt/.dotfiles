@@ -21,6 +21,8 @@ git clone https://github.com/marlonrichert/zsh-autocomplete.git ${ZSH_CUSTOM:-~/
 # Install all our dependencies with Brewfile
 bash brewfile
 
+yabai --start-service
+
 mkdir $HOME/Developer
 
 # Set macOS preferences
